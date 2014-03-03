@@ -59,3 +59,38 @@ btn.addEventListener("click", drawCanvas, false);
         $(this).toggleClass("play");
     });    
 
+var back = document.createElement("canvas");
+back.id = "footer_background";
+back.width = 960;
+back.height = 480;
+
+
+var btx = back.getContext("2d");
+ 
+    for (var x = 0; x < 13; x++) {
+        for( var y = 0; y<28; y++) {
+           
+                btx.fillStyle = '#'+Math.floor(Math.random()*16777215).toString(16);
+                btx.beginPath();
+                btx.moveTo(40*(y), 40*(x)); // give the (x,y) coordinates
+                btx.lineTo(40*(y), 40*(x+1));
+                btx.lineTo(40*(y+1), 40*(x));
+                btx.fill();
+                btx.closePath();
+                btx.fillStyle = '#'+Math.floor(Math.random()*16777215).toString(16);
+                btx.beginPath();
+                btx.moveTo(40*(y+1), 40*(x)); // give the (x,y) coordinates
+                btx.lineTo(40*(y+1), 40*(x+1));
+                btx.lineTo(40*(y), 40*(x+1));
+                btx.fill();
+                btx.closePath();
+            
+        }
+    }
+    
+    //document.body.appendChild(back);
+    
+    var image = new Image();
+    image.id = "pic"
+    image.src = back.toDataURL();
+    document.getElementById("footer").style.background = "url("+back.toDataURL()+")";
