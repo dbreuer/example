@@ -253,7 +253,7 @@ body > div {
             margin: 0px auto;
             font: 700 50px Verdana;
             text-transform: uppercase;
-            color: #69C6F1;
+            color: #fff;
             text-shadow: 2px 2px 5px #ff9;
             z-index: 99;
             -webkit-animation: cssAnimation_done 10s 1 ease-in forwards;
