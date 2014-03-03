@@ -1,0 +1,272 @@
+/* 
+    Document   : custom
+    Created on : Mar 2, 2014, 3:55:41 PM
+    Author     : breuer_david
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+nav + section {
+    padding-top: 60px;
+}
+section:nth-child(odd) { color: #222; background-color: #0bb697; text-shadow: none; }
+
+body > div {
+                float: left;
+                max-width: 600px;
+            }
+            .canvasBtn {
+                background-color:#3d94f6;
+                text-indent:0;
+                display:inline-block;
+                color:#ffffff;
+                font-family:Verdana;
+                font-size:19px;
+                font-weight:bold;
+                font-style:normal;
+                height:45px;
+                line-height:45px;
+                width:200px;
+                text-decoration:none;
+                text-align:center;
+                cursor: pointer;
+        }.canvasBtn:hover {
+                background-color:#1e62d0;
+        }.canvasBtn:active {
+                position:relative;
+                top:1px;
+        }
+        
+        
+        .css3-animation {
+            height: 500px;
+            transition: all 0.3s ease-in;
+            -webkit-transition: all 0.3s ease-in;
+        }
+        .css3-animation > div {
+            opacity: 0;
+        }
+        
+        .css3-animation .start {
+             margin: 0px auto;
+            font: 700 30px Verdana;
+            text-transform: uppercase;
+            color: #69C6F1;
+            text-align: center;
+            cursor: pointer;
+            opacity: 1;
+            -webkit-transform: translate(0px, 100px);
+        }
+        
+        .css3-animation .start:hover {
+            transition: all 0.3s ease-in;
+            -webkit-transition: all 0.3s ease-in;
+            text-shadow: 5px 5px 10px #449;
+        }
+        
+        .css3-animation.play .start {
+            opacity: 0;
+        }
+        
+        .css3-animation.play .part1 {
+            width: 300px;
+            height: 60px;
+            background: #97D1AB;
+            -webkit-animation: cssAnimation 10s 1 ease forwards;
+            -moz-animation: cssAnimation 10s 1 ease forwards;
+            -o-animation: cssAnimation 10s 1 ease forwards;
+        }
+        @-webkit-keyframes cssAnimation {
+        0% { -webkit-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 100px); }
+        20% { -webkit-transform: rotate(180deg) scale(1) skew(0deg) translate(-202px, -100px); opacity: 1; }
+        80% { -webkit-transform: rotate(180deg) scale(1) skew(0deg) translate(-202px, -100px); opacity: 1; }
+        100% { -webkit-transform: rotate(0deg) scale(0) skew(0deg) translate(-202px, -100px); opacity: 0; }
+        }
+        @-moz-keyframes cssAnimation {
+        from { -moz-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -moz-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        @-o-keyframes cssAnimation {
+        from { -o-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -o-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        
+         .css3-animation.play .part2 {
+            width: 300px;
+            height: 60px;
+            background: #69C6F1;
+            -webkit-animation: cssAnimation_2 10s 1 ease-in forwards;
+            -moz-animation: cssAnimation_2 10s 1 ease-in forwards;
+            -o-animation: cssAnimation_2 10s 1 ease-in forwards;
+        }
+        @-webkit-keyframes cssAnimation_2 {
+        0% { -webkit-transform: rotate(4deg) scale(0) skew(1deg) translate(200px, -400px); }
+        30% { -webkit-transform: rotate(180deg) scale(1) skew(0deg) translate(-502px, -40px);opacity: 1; }
+        80% { -webkit-transform: rotate(180deg) scale(1) skew(0deg) translate(-502px, -40px);opacity: 1; }
+        100% { -webkit-transform: rotate(0deg) scale(0.5) skew(0deg) translate(-502px, -40px);opacity: 0; }
+        }
+        @-moz-keyframes cssAnimation_2 {
+        from { -moz-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -moz-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        @-o-keyframes cssAnimation_2 {
+        from { -o-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -o-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        
+        .css3-animation.play .part3 {
+            width: 300px;
+            height: 20px;
+            background: #97D1AB;
+            -webkit-animation: cssAnimation_3 10s 1 ease-in forwards;
+            -moz-animation: cssAnimation_3 10s 1 ease-in forwards;
+            -o-animation: cssAnimation_3 10s 1 ease-in forwards;
+        }
+        @-webkit-keyframes cssAnimation_3 {
+        0% { -webkit-transform: rotate(180deg) scale(0) skew(1deg) translate(-600px, -400px); }
+        30% { -webkit-transform: rotate(0deg) scale(1) skew(125deg) translate(458px, -40px); opacity: 1;}
+        80% { -webkit-transform: rotate(0deg) scale(1) skew(125deg) translate(458px, -40px); opacity: 1;}
+        100% { -webkit-transform: rotate(0deg) scale(0.2) skew(125deg) translate(458px, -40px); opacity: 0;}
+        }
+        @-moz-keyframes cssAnimation_3 {
+        from { -moz-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -moz-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        @-o-keyframes cssAnimation_3 {
+        from { -o-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -o-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        
+        .css3-animation.play .part4 {
+            width: 300px;
+            height: 20px;
+            background: #69C6F1;
+            -webkit-animation: cssAnimation_4 10s 1 ease-in forwards;
+            -moz-animation: cssAnimation_4 10s 1 ease-in forwards;
+            -o-animation: cssAnimation_4 10s 1 ease-in forwards;
+        }
+        @-webkit-keyframes cssAnimation_4 {
+        0% { -webkit-transform: rotate(180deg) scale(0) skew(1deg) translate(-600px, -400px); }
+        10% { -webkit-transform: rotate(0deg) scale(1) skew(125deg) translate(130px, -60px); opacity: 1;}
+        80% { -webkit-transform: rotate(0deg) scale(1) skew(125deg) translate(130px, -60px); opacity: 1;}
+        100% { -webkit-transform: rotate(0deg) scale(0) skew(0deg) translate(130px, 0px); opacity: 0;}
+        }
+        @-moz-keyframes cssAnimation_4 {
+        from { -moz-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -moz-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        @-o-keyframes cssAnimation_4 {
+        from { -o-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -o-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        
+        .css3-animation.play .part5 {
+            width: 30px;
+            height: 50px;
+            background: #97D1AB;
+            -webkit-animation: cssAnimation_5 10s 1 ease-in forwards;
+            -moz-animation: cssAnimation_5 10s 1 ease-in forwards;
+            -o-animation: cssAnimation_5 10s 1 ease-in forwards;
+        }
+        @-webkit-keyframes cssAnimation_5 {
+        0% { -webkit-transform: rotate(180deg) scale(0) skew(1deg) translate(-600px, -400px); }
+        10% { -webkit-transform: rotate(325deg) scale(1) skew(-35deg) translate(977px, 407px);opacity: 1; }
+        80% { -webkit-transform: rotate(325deg) scale(1) skew(-35deg) translate(977px, 407px);opacity: 1; }
+        100% { -webkit-transform: rotate(325deg) scale(0.5) skew(0deg) translate(977px, 407px);opacity: 0; }
+        }
+        @-moz-keyframes cssAnimation_5 {
+        from { -moz-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -moz-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        @-o-keyframes cssAnimation_5 {
+        from { -o-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -o-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        
+        .css3-animation.play .text1 {
+            font: 700 50px Verdana;
+            text-transform: uppercase;
+            color: #FFF;
+            
+            -webkit-animation: cssAnimation_t1 10s 1 ease-in forwards;
+            -moz-animation: cssAnimation_t1 10s 1 ease-in forwards;
+            -o-animation: cssAnimation_t1 10s 1 ease-in forwards;
+        }
+        @-webkit-keyframes cssAnimation_t1 {
+        0% { -webkit-transform: scale(0) skew(1deg) translate(-600px, -400px); }
+        40% { -webkit-transform: scale(1) skew(0deg) translate(250px, -110px);opacity: 1; }
+        80% { -webkit-transform: scale(1) skew(0deg) translate(250px, -110px);opacity: 1; }
+        100% { -webkit-transform: scale(1) skew(0deg) translate(250px, -110px);opacity: 0; }
+        }
+        @-moz-keyframes cssAnimation_t1 {
+        from { -moz-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -moz-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        @-o-keyframes cssAnimation_t1 {
+        from { -o-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -o-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        
+        .css3-animation.play .text2 {
+            font: 700 50px Verdana;
+            text-transform: uppercase;
+            color: #000;
+            
+            -webkit-animation: cssAnimation_t2 10s 1 ease-in forwards;
+            -moz-animation: cssAnimation_t2 10s 1 ease-in forwards;
+            -o-animation: cssAnimation_t2 10s 1 ease-in forwards;
+        }
+        @-webkit-keyframes cssAnimation_t2 {
+        0% { -webkit-transform: scale(0) skew(1deg) translate(1600px, 400px); }
+        45% { -webkit-transform: scale(1) skew(0deg) translate(530px, -170px);opacity: 1; }
+        80% { -webkit-transform: scale(1) skew(0deg) translate(530px, -170px);opacity: 1; }
+        100% { -webkit-transform: scale(1) skew(0deg) translate(530px, -170px);opacity: 0; }
+        }
+        @-moz-keyframes cssAnimation_t2 {
+        from { -moz-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -moz-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        @-o-keyframes cssAnimation_t2 {
+        from { -o-transform: rotate(4deg) scale(0) skew(1deg) translate(-200px, 0px); }
+        to { -o-transform: rotate(180deg) scale(1) skew(0deg) translate(202px, 0px); }
+        }
+        
+        .css3-animation.play .progressbar {
+            width: 0px;
+            height: 20px;
+            margin: 0px auto;
+            background: #ff0;
+            z-index: 99;
+            -webkit-animation: cssAnimation_prg 10s 1 ease-in forwards;
+        }
+        @-webkit-keyframes cssAnimation_prg {
+        0% { width: 0px; opacity: 1;}
+        60% { width: 700px; opacity: 1; }
+        100% { width: 0px; background: #f99; opacity: 1; }
+        }
+        
+         .css3-animation.play .done {
+            margin: 0px auto;
+            font: 700 50px Verdana;
+            text-transform: uppercase;
+            color: #69C6F1;
+            text-shadow: 2px 2px 5px #ff9;
+            z-index: 99;
+            -webkit-animation: cssAnimation_done 10s 1 ease-in forwards;
+        }
+        @-webkit-keyframes cssAnimation_done {
+        0% {  opacity: 0;}
+        95% {opacity: 0; }
+        100% {-webkit-transform: scale(1) skew(0deg) translate(300px, -200px); opacity: 1; }
+        }
+        #result {
+            height: 300px;
+        }
+        
+        #result canvas{
+            margin: 0px auto;   
+        }
