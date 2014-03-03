@@ -70,14 +70,14 @@ var btx = back.getContext("2d");
     for (var x = 0; x < 13; x++) {
         for( var y = 0; y<28; y++) {
            
-                btx.fillStyle = '#'+Math.floor(Math.random()*16777215).toString(16);
+                btx.fillStyle = 'rgba('+Math.floor(Math.random()*255)+', '+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+', 0.6)';
                 btx.beginPath();
                 btx.moveTo(40*(y), 40*(x)); // give the (x,y) coordinates
                 btx.lineTo(40*(y), 40*(x+1));
                 btx.lineTo(40*(y+1), 40*(x));
                 btx.fill();
                 btx.closePath();
-                btx.fillStyle = '#'+Math.floor(Math.random()*16777215).toString(16);
+                btx.fillStyle = 'rgba('+Math.floor(Math.random()*255)+', '+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+', 0.6)';
                 btx.beginPath();
                 btx.moveTo(40*(y+1), 40*(x)); // give the (x,y) coordinates
                 btx.lineTo(40*(y+1), 40*(x+1));
@@ -88,9 +88,11 @@ var btx = back.getContext("2d");
         }
     }
     
-    //document.body.appendChild(back);
+    
     
     var image = new Image();
     image.id = "pic"
     image.src = back.toDataURL();
     document.getElementById("footer").style.background = "url("+back.toDataURL()+")";
+    
+   
