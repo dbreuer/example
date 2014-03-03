@@ -28,6 +28,7 @@ It is a canvas drawing example
 + [Bootstrap 3.x Core page](http://getbootstrap.com/)
 + [Bootflat Home page](http://www.flathemes.com/)
 + [GitHub pages](https://github.com/dbreuer83/example)
++ [Twitter widget](https://dev.twitter.com/docs/platform-objects/tweets)
 
 ## Useful Links:
 
