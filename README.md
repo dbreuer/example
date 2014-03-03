@@ -17,11 +17,16 @@ It is an simple vector graphic with svg.
 It is a simple animation like a website intro with css3.
 ### 3. HTML5 draw
 It is a canvas drawing example
+### 4. Canvas image footer background
+Creating background image width custom canvas
+### 5. Twitter widget
+Get the last twitter feed
 
 
 ## Changelog:
 
 2014/03/03 beta 1.0
+2014/03/03 beta 1.1
 
 ## Links:
 
